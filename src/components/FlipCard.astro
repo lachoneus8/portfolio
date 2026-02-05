@@ -24,7 +24,8 @@ const { title, icon, frontContent, backContent, image } = Astro.props;
       {icon && <span class="flip-card-icon">{icon}</span>}
       <h3>{title}</h3>
       <p>{frontContent}</p>
-      <span class="flip-hint">→ Hover to learn more</span>
+      <span class="flip-hint flip-hint-desktop">→ Hover to learn more</span>
+      <span class="flip-hint flip-hint-mobile">→ Tap to learn more</span>
     </div>
     <div class="flip-card-back">
       <h3>{title}</h3>
@@ -119,33 +120,38 @@ const { title, icon, frontContent, backContent, image } = Astro.props;
     font-style: italic;
   }
 
+  .flip-hint-mobile {
+    display: none;
+  }
+
   /* Mobile: tap to flip instead of hover */
   @media (max-width: 768px) {
-    .flip-card-inner {
-      transition: transform 0.6s;
+    .flip-hint-desktop {
+      display: none;
+    }
+
+    .flip-hint-mobile {
+      display: inline;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: none;
     }
     
     .flip-card.flipped .flip-card-inner {
       transform: rotateY(180deg);
     }
-    
-    .flip-card:hover .flip-card-inner {
-      transform: none;
-    }
-    
-    .flip-hint::before {
-      content: "→ Tap to learn more";
-    }
   }
 </style>
 
-<script>
-  // Add click handler for mobile
-  if (window.innerWidth <= 768) {
-    document.querySelectorAll('.flip-card').forEach(card => {
-      card.addEventListener('click', () => {
-        card.classList.toggle('flipped');
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll('.flip-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+          this.classList.toggle('flipped');
+        });
       });
-    });
-  }
+    }
+  });
 </script>

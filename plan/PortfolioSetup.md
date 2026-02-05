@@ -15,10 +15,10 @@
 [x] b. Establish typography scale and font choices
 [x] c. Create base layout component with header and footer
 [x] d. Build reusable Card component for project previews
-[ ] e. Build responsive navigation component
-[ ] f. Create Button and Link component variants
-[ ] g. Establish spacing and breakpoint utilities
-[ ] h. Test responsive behavior across mobile, tablet, and desktop
+[x] e. Build responsive navigation component
+[x] f. Create Button and Link component variants
+[x] g. Establish spacing and breakpoint utilities
+[x] h. Test responsive behavior across mobile, tablet, and desktop
 
 ## 3. Home Page
 

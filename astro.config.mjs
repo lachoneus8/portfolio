@@ -19,15 +19,21 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/lachoneus8/portfolio' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Welcome',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Home', slug: 'index' },
+						{ label: 'About', slug: 'about' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Projects',
+					autogenerate: { directory: 'projects' },
+				},
+				{
+					label: 'Meta',
+					items: [
+						{ label: 'Behind the Build', slug: 'behind-the-build' },
+					],
 				},
 			],
 		}),

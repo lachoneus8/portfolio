@@ -1,0 +1,93 @@
+---
+interface Props {
+	href: string;
+	variant?: 'default' | 'accent' | 'subtle' | 'external';
+	className?: string;
+	external?: boolean;
+}
+
+const { 
+	href, 
+	variant = 'default', 
+	className = '',
+	external = false 
+} = Astro.props;
+
+const isExternal = external || href.startsWith('http');
+---
+
+<a
+	class={`link link--${variant} ${className}`}
+	href={href}
+	target={isExternal ? '_blank' : undefined}
+	rel={isExternal ? 'noopener noreferrer' : undefined}
+>
+	<slot />
+	{isExternal && <span class="link__external-icon" aria-hidden="true">↗</span>}
+</a>
+
+<style>
+	.link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+		text-decoration: none;
+		transition: all 0.2s ease;
+		position: relative;
+	}
+
+	/* Default variant */
+	.link--default {
+		color: var(--sl-color-text);
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 2px;
+	}
+
+	.link--default:hover {
+		color: var(--sl-color-accent);
+		text-decoration-thickness: 2px;
+	}
+
+	/* Accent variant */
+	.link--accent {
+		color: var(--sl-color-accent);
+		font-weight: 500;
+	}
+
+	.link--accent:hover {
+		color: var(--sl-color-accent-high);
+		text-decoration: underline;
+		text-decoration-thickness: 2px;
+		text-underline-offset: 2px;
+	}
+
+	/* Subtle variant */
+	.link--subtle {
+		color: var(--sl-color-gray-3);
+	}
+
+	.link--subtle:hover {
+		color: var(--sl-color-text);
+	}
+
+	/* External link variant */
+	.link--external {
+		color: var(--sl-color-accent);
+	}
+
+	.link--external:hover {
+		color: var(--sl-color-accent-high);
+	}
+
+	.link__external-icon {
+		font-size: 0.85em;
+		opacity: 0.7;
+	}
+
+	.link:focus-visible {
+		outline: 2px solid var(--sl-color-accent);
+		outline-offset: 2px;
+		border-radius: 2px;
+	}
+</style>

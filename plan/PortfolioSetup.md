@@ -4,7 +4,7 @@
 
 [x] a. Configure Astro project structure and base dependencies
 [x] b. Set up GitHub repository with appropriate .gitignore
-[ ] c. Configure GitHub Pages deployment workflow
+[x] c. Configure GitHub Pages deployment workflow
 [ ] d. Set up TypeScript configuration and type checking
 [x] e. Create base folder structure for components, layouts, and content
 [x] f. Configure MDX support for content pages

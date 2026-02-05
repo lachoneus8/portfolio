@@ -46,16 +46,6 @@ This portfolio is built with a focused stack chosen for simplicity, performance,
 
 The development process intentionally leverages AI tools (GitHub Copilot with Claude Sonnet 4.5) for boilerplate generation, component scaffolding, and refactoring suggestions, while keeping all architectural decisions and creative direction human-led. This workflow is documented as part of the "Behind the Build" section of the portfolio.
 
-## Development Commands
-
-| Command             | Action                                           |
-| :------------------ | :----------------------------------------------- |
-| `npm install`       | Installs dependencies                            |
-| `npm run dev`       | Starts local dev server at `localhost:4321`      |
-| `npm run build`     | Build your production site to `./dist/`          |
-| `npm run preview`   | Preview your build locally, before deploying     |
-| `npm run astro ...` | Run CLI commands like `astro add`, `astro check` |
-
 ## Design Principles
 
 - Clean, minimalist layout with strong typography

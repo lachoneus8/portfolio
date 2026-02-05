@@ -1,0 +1,21 @@
+/* Navy Blue + Amber/Gold Color Theme */
+/* Using Starlight's CSS custom properties for proper theming */
+
+:root {
+	/* Amber/gold accent color */
+	--sl-hue-accent: 40;
+	
+	/* Navy blue for gray scale */
+	--sl-hue-gray: 220;
+}
+
+/* Light mode - let Starlight handle most colors automatically */
+:root[data-theme='light'] {
+	--sl-color-accent: hsl(40, 95%, 50%);
+}
+
+/* Dark mode - let Starlight handle most colors automatically */
+:root[data-theme='dark'] {
+	--sl-color-accent: hsl(40, 100%, 65%);
+}
+

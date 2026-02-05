@@ -5,13 +5,13 @@
 [x] a. Configure Astro project structure and base dependencies
 [x] b. Set up GitHub repository with appropriate .gitignore
 [x] c. Configure GitHub Pages deployment workflow
-[ ] d. Set up TypeScript configuration and type checking
+[x] d. Set up TypeScript configuration and type checking
 [x] e. Create base folder structure for components, layouts, and content
 [x] f. Configure MDX support for content pages
 
 ## 2. Design System & Components
 
-[ ] a. Define color palette and accent colors
+[x] a. Define color palette and accent colors
 [ ] b. Establish typography scale and font choices
 [ ] c. Create base layout component with header and footer
 [ ] d. Build reusable Card component for project previews

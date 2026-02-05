@@ -9,7 +9,13 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			customCss: [
+				'./src/styles/custom.css',
+			],
+			expressiveCode: {
+				themes: ['github-dark', 'github-light'],
+			},
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/lachoneus8/portfolio' }],
 			sidebar: [
 				{
 					label: 'Guides',

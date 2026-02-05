@@ -1,7 +1,12 @@
+---
+title: Resume
+description: Complete professional resume for Dave Stevens - Principal Software Engineer
+---
+
 # David (Dave) Stevens
 
-**Location:** Lehi, UT 84043  
-**Phone:** (408) 761-3280  
+**Location:** Lehi, UT  
+**Phone:** Available on request  
 **Email:** lachoneus8@gmail.com  
 **LinkedIn:** [linkedin.com/in/dwstevens](https://linkedin.com/in/dwstevens)
 

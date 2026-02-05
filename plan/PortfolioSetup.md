@@ -22,8 +22,8 @@
 
 ## 3. Home Page
 
-[ ] a. Design and implement hero section
-[ ] b. Write hero copy summarizing who you are and what you do
+[x] a. Design and implement hero section
+[x] b. Write hero copy summarizing who you are and what you do
 [ ] c. Add featured projects preview section
 [ ] d. Create call-to-action for viewing full project list
 [ ] e. Optimize for mobile-first experience

@@ -23,6 +23,7 @@ export default defineConfig({
 					items: [
 						{ label: 'Home', slug: 'index' },
 						{ label: 'About', slug: 'about' },
+						{ label: 'Resume', slug: 'resume' },
 					],
 				},
 				{
@@ -30,7 +31,7 @@ export default defineConfig({
 					autogenerate: { directory: 'projects' },
 				},
 				{
-					label: 'Meta',
+					label: 'Site',
 					items: [
 						{ label: 'Behind the Build', slug: 'behind-the-build' },
 					],

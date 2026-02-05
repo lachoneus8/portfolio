@@ -34,7 +34,7 @@
 [x] b. Highlight experience with large and small teams
 [x] c. Emphasize systems thinking and creative problem solving
 [x] d. Structure content with clear visual hierarchy
-[ ] e. Add professional headshot or visual element
+[x] e. Add professional headshot or visual element
 [x] f. Include subtle creative flair in presentation
 
 ## 5. Projects Section

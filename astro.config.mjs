@@ -24,6 +24,7 @@ export default defineConfig({
 						{ label: 'Home', slug: 'index' },
 						{ label: 'About', slug: 'about' },
 						{ label: 'Resume', slug: 'resume' },
+						{ label: 'Game Jams', slug: 'game-jams' },
 					],
 				},
 				{

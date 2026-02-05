@@ -4,11 +4,10 @@ description: Principal Software Engineer - Building scalable systems and leading
 template: splash
 hero:
   title: |
-    Building Systems,
-    Leading Teams,
-    Solving Problems
+    I Build Systems
+    That Scale
   tagline: |
-    Principal Software Engineer with many years architecting scalable solutions across gaming, AR/VR, cloud services, and interactive experiences. From Xbox Avatars to Meta's billion-user platforms, I bring a unique blend of technical depth and team leadership.
+    From Xbox Avatars to Meta's billion-user platforms, I architect solutions that ship to millions while keeping teams aligned and code maintainable. Unity specialist who speaks fluent backend, frontend, and "what does the user actually need?"
   actions:
     - text: View Projects
       link: /portfolio/projects/xbox-avatars/
@@ -25,38 +24,38 @@ hero:
 ---
 
 import { Card, CardGrid } from "@astrojs/starlight/components";
+import FlipCard from "../../components/FlipCard.astro";
 
-## What I Do
+## Here's What I Actually Do
 
 <CardGrid stagger>
-  <Card title="Systems Architecture" icon="puzzle">
-    Design and build scalable client applications, service backends, and data
-    pipelines that power experiences for millions of users across mobile,
-    desktop, console, and VR platforms.
+  <FlipCard 
+    title="🎮 Unity Everywhere"
+    frontContent="Built production Unity apps across mobile, desktop, console, and VR. Editor plugins, performance tools, avatar systems—if Unity can run it, I've probably shipped it."
+    backContent="Specific wins: Xbox Avatars (millions of users), Meta Quest VR apps, mobile games hitting 60fps on mid-range devices. Built custom editor tools that cut artist iteration time by 50%. Shipped to iOS, Android, Xbox, Quest, and PC."
+  />
+  <FlipCard 
+    title="⚡ Performance Obsession"
+    frontContent="Shaved 40% off load times for Meta avatars. Profiled CPU, memory, asset pipelines until the numbers looked right. When users complain it's slow, I break out the profiler and fix it."
+    backContent="Unity Profiler, Memory Profiler, and custom telemetry tools are my weapons. Reduced Meta avatar feature execution by 20%, optimized asset bundles, eliminated GC spikes. Users don't notice good performance—but they definitely notice bad performance."
+  />
+  <Card title="🔧 Full-Stack Problem Solver" icon="puzzle">
+    Client apps, service backends, data pipelines—I build whatever solves the
+    problem. Mobile to VR to cloud. Not religious about tech stacks, just what
+    actually works.
   </Card>
-  <Card title="Unity Development" icon="setting">
-    Deep expertise in Unity 3D across mobile, desktop, console, and VR
-    platforms. Built production apps, editor plugins, performance measurement
-    tools, and avatar systems that shipped to millions of users.
+  <Card title="👥 Team Translator" icon="group">
+    I speak Engineer, Artist, Designer, and Product Manager. Led teams of 20+
+    where half didn't write code. Getting everyone aligned is half the battle.
   </Card>
-  <Card title="Team Leadership" icon="group">
-    Lead cross-functional teams of engineers and technical artists, implementing
-    agile methods and fostering collaboration between technical and creative
-    disciplines.
-  </Card>
-  <Card title="Performance Optimization" icon="rocket">
-    Drive aggressive performance targets through deep CPU/memory analysis,
-    achieving measurable improvements like 40% faster load times and 20% reduced
-    feature execution for Meta avatars.
-  </Card>
-  <Card title="AI-Assisted Development" icon="star">
-    Leverage cutting-edge AI tools (Claude Sonnet 4.5, GitHub Copilot) to
-    dramatically increase productivity in documentation, code analysis, and
-    system design while maintaining human-directed architecture.
-  </Card>
+  <FlipCard 
+    title="🤖 AI Power User"
+    frontContent="Using Claude and GitHub Copilot to ship faster while keeping architectural decisions firmly human-directed. AI handles the tedious stuff so I can focus on the interesting problems."
+    backContent="Built this entire portfolio site in days using Claude Sonnet 4.5 + Copilot. Use AI for code generation, documentation, data analysis, and test creation. But architecture, user experience, and business decisions? That's still human work."
+  />
 </CardGrid>
 
-## Recent Work Highlights
+## Stuff I've Shipped
 
 <CardGrid>
   <Card title="Meta Avatars Platform" icon="user">
@@ -76,14 +75,14 @@ import { Card, CardGrid } from "@astrojs/starlight/components";
   </Card>
 </CardGrid>
 
-## Why Work With Me
+## Why People Hire Me
 
-I don't just write code—I understand business challenges, end-user needs, and the technology landscape to implement well-honed solutions that tackle the biggest problems head-on. Whether leading large teams at Meta and Microsoft or contributing hands-on at smaller studios, I bring:
+I solve problems. Not in a buzzword way—I mean I dig into the messy reality of what's actually broken, figure out what needs to happen, and ship it. Whether that's:
 
-- **Systems Thinking**: Seeing the big picture while managing technical details
-- **Cross-Disciplinary Bridge**: Fostering communication between engineering, art, design, and backend teams
-- **Proven Scale**: Shipped solutions used by millions, from Xbox One to Quest headsets to Meta's social platforms
-- **Modern Workflow**: Intentional use of AI tools with human-directed architectural decisions
+- **Seeing the Whole System**: Understanding how Unity client, backend services, and user needs all connect
+- **Actually Communicating**: Translating between engineers who want clean architecture and artists who need it to work _now_
+- **Shipping at Scale**: Built stuff used by millions, but I still remember what it's like to ship with a 3-person team
+- **Moving Fast**: Using modern tools (AI, good automation) to iterate quickly without sacrificing quality
 
 ---
 

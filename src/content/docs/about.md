@@ -3,45 +3,47 @@ title: About
 description: Learn more about Dave Stevens and his approach to software engineering
 ---
 
-# About Dave Stevens
+# About
 
-## My Background
+## The Short Version
 
-I've been building software for many years, working across a fascinating range of domains—from defense simulations at Lockheed Martin to entertainment apps at Microsoft, avatar systems at Meta, and game services at Bethesda. What drives me isn't just writing code, but understanding the full picture: the business challenge, the end-user experience, and the technical landscape needed to deliver real value.
+I build systems that scale. Unity specialist who can also architect backends, optimize performance, and lead teams without losing track of what users actually need.
 
-## How I Work
+I've shipped to millions (Xbox, Meta, Microsoft) and worked with small teams (midscale, startups). The project size changes, but the approach doesn't: understand the real problem, build something that works, iterate until it's right.
 
-### Systems Thinking
+## What I Actually Bring
 
-I approach problems holistically. Whether I'm architecting a cloud pipeline that needs to serve billions of users or optimizing a Unity app for low-end mobile devices, I consider the entire system—performance, maintainability, scalability, and team workflow.
+### I See the Whole System
 
-### Leading and Contributing
+Whether it's a Unity app hitting performance walls or a backend service that needs to scale to millions, I look at the entire picture. Code, infrastructure, team workflow, user impact—it all matters.
 
-I'm equally comfortable leading a team of 20+ engineers and diving deep into complex technical problems myself. At Meta, I led performance optimization efforts while also implementing critical code that achieved 40% faster load times. At Microsoft, I managed teams while staying hands-on with architecture decisions.
+### I Lead and I Build
 
-### Bridging Disciplines
+Led teams of 20+ at Meta while still writing the critical performance code that shaved 40% off load times. At Microsoft, managed engineers while making architecture decisions. I don't just delegate—I roll up my sleeves.
 
-Some of my most valuable work has been fostering communication between engineering, art, design, and backend teams. Technical artists and engineers speak different languages, but the best results come from true collaboration. I've built my career on being that bridge.
+### I Translate Between Humans
 
-## Technical Focus Areas
+Engineers, artists, designers, product managers—everyone has their own language. Some of my best work has been getting these groups actually talking to each other. Technical artists and backend devs need a translator; I've done that job a lot.
 
-- **Unity 3D Development**: Extensive experience across mobile, desktop, console, and VR platforms, including editor plugins and performance tools
-- **Avatar Systems**: Deep expertise from Xbox Avatars and Meta Avatars to various avatar SDKs
-- **Cloud Services**: Azure-based backends, CDNs, batch processing, and real-time rendering services
-- **Performance Engineering**: CPU/memory optimization, profiling, and achieving aggressive performance targets
-- **AI-Assisted Development**: Intentional use of Claude Sonnet 4.5 and GitHub Copilot to increase productivity while maintaining human-directed architecture
+## Tech I Use
 
-## Why I Do This
+- **Unity Everything**: Mobile, desktop, console, VR. Editor plugins, performance tools, avatar systems. If Unity runs it, I've probably shipped it.
+- **Avatar Systems**: Xbox Avatars, Meta Avatars, various SDKs. I've built a lot of virtual humans.
+- **Backend Services**: Azure pipelines, CDNs, batch processing, real-time rendering. Cloud stuff at scale.
+- **Performance**: CPU profiling, memory optimization, making slow things fast.
+- **AI Tools**: Claude and Copilot user. I automate the boring stuff so I can focus on interesting problems.
 
-I love solving hard problems with smart people. The thrill of shipping something that millions will use, the satisfaction of unblocking a team with the right architecture decision, the challenge of hitting a seemingly impossible performance target—that's what keeps me engaged.
+## Why This Work
 
-## Current Work
+Solving hard problems with smart people. Shipping something millions will use. Unblocking a team with the right call. Hitting an "impossible" performance target. That's the good stuff.
 
-I'm currently a Principal Software Engineer at Jahnel Group, working with Bethesda Game Studios to build and maintain APIs that power mods, social features, and authentication across iconic games like Starfield, Skyrim, and Doom.
+## Right Now
 
-## Let's Connect
+Principal Software Engineer at Jahnel Group, building APIs for Bethesda games (Starfield, Skyrim, Doom). Mods, social features, authentication—the infrastructure that lets players do cool stuff.
 
-I'm always interested in discussing challenging technical problems, team dynamics, the game industry, or the evolving role of AI in software development.
+## Let's Talk
+
+Interested in challenging problems, team dynamics, game dev, or how AI is changing how we build software.
 
 - **Email**: [lachoneus8@gmail.com](mailto:lachoneus8@gmail.com)
 - **LinkedIn**: [linkedin.com/in/dwstevens](https://linkedin.com/in/dwstevens)

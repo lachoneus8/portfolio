@@ -24,18 +24,18 @@
 
 [x] a. Design and implement hero section
 [x] b. Write hero copy summarizing who you are and what you do
-[ ] c. Add featured projects preview section
-[ ] d. Create call-to-action for viewing full project list
-[ ] e. Optimize for mobile-first experience
+[x] c. Add featured projects preview section
+[x] d. Create call-to-action for viewing full project list
+[x] e. Optimize for mobile-first experience
 
 ## 4. About Page
 
-[ ] a. Write narrative overview of background and experience
-[ ] b. Highlight experience with large and small teams
-[ ] c. Emphasize systems thinking and creative problem solving
-[ ] d. Structure content with clear visual hierarchy
+[x] a. Write narrative overview of background and experience
+[x] b. Highlight experience with large and small teams
+[x] c. Emphasize systems thinking and creative problem solving
+[x] d. Structure content with clear visual hierarchy
 [ ] e. Add professional headshot or visual element
-[ ] f. Include subtle creative flair in presentation
+[x] f. Include subtle creative flair in presentation
 
 ## 5. Projects Section
 
@@ -48,14 +48,14 @@
 
 ## 6. Behind the Build Page
 
-[ ] a. Document technology choices and rationale
-[ ] b. Explain Astro framework selection
-[ ] c. Describe site architecture and folder structure
-[ ] d. Detail how Claude Sonnet 4.5 was used in development
-[ ] e. Detail how GitHub Copilot was used in development
-[ ] f. Explain human-directed decision making process
-[ ] g. Document deployment strategy for GitHub Pages
-[ ] h. Share lessons learned about AI-assisted development
+[x] a. Document technology choices and rationale
+[x] b. Explain Astro framework selection
+[x] c. Describe site architecture and folder structure
+[x] d. Detail how Claude Sonnet 4.5 was used in development
+[x] e. Detail how GitHub Copilot was used in development
+[x] f. Explain human-directed decision making process
+[x] g. Document deployment strategy for GitHub Pages
+[x] h. Share lessons learned about AI-assisted development
 
 ## 7. Content Creation
 
@@ -79,9 +79,9 @@
 ## 9. Deployment & Launch
 
 [ ] a. Configure custom domain (if applicable)
-[ ] b. Set up GitHub Actions for automated deployment
-[ ] c. Test deployment process end-to-end
-[ ] d. Verify site loads correctly on GitHub Pages
+[x] b. Set up GitHub Actions for automated deployment
+[x] c. Test deployment process end-to-end
+[x] d. Verify site loads correctly on GitHub Pages
 [ ] e. Set up analytics (if desired)
 [ ] f. Create social media preview cards (Open Graph tags)
 
@@ -91,5 +91,3 @@
 [ ] b. Design filtering/tagging system for projects
 [ ] c. Implement light/dark mode toggle
 [ ] d. Add interactive elements with partial hydration
-[ ] e. Consider blog or articles section
-[ ] f. Add animation or micro-interactions for polish

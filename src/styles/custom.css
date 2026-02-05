@@ -215,4 +215,81 @@ body {
 .w-full { width: 100%; }
 .max-w-full { max-width: 100%; }
 
+/* ============================================
+   Indie Game Dev Polish
+   ============================================ */
+
+/* Card hover effects - responsive and playful */
+.card {
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	position: relative;
+}
+
+.card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 24px rgba(251, 191, 36, 0.15);
+}
+
+/* Starlight's card component targeting */
+.sl-card {
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	border: 1px solid var(--sl-color-gray-5);
+}
+
+.sl-card:hover {
+	transform: translateY(-4px);
+	border-color: var(--sl-color-accent);
+	box-shadow: 0 8px 24px rgba(251, 191, 36, 0.15);
+}
+
+/* FlipCard integration with grid */
+.card-grid .flip-card {
+	width: 100%;
+}
+
+/* Add subtle glow effect to flip cards */
+.flip-card-back {
+	box-shadow: 0 4px 20px rgba(251, 191, 36, 0.2);
+}
+
+/* Add subtle glow to amber accent on hover */
+a:hover, button:hover {
+	transition: all 0.2s ease;
+}
+
+/* Smooth scroll behavior */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Add a bit of bounce to interactive elements */
+.hero a, .sl-link-button {
+	transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero a:hover, .sl-link-button:hover {
+	transform: scale(1.05);
+}
+
+/* Emoji in headings get a subtle animation */
+h2:hover, h3:hover {
+	transition: transform 0.3s ease;
+}
+
+/* Make the page load feel snappier */
+.sl-markdown-content {
+	animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 

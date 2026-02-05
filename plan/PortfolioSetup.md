@@ -12,9 +12,9 @@
 ## 2. Design System & Components
 
 [x] a. Define color palette and accent colors
-[ ] b. Establish typography scale and font choices
-[ ] c. Create base layout component with header and footer
-[ ] d. Build reusable Card component for project previews
+[x] b. Establish typography scale and font choices
+[x] c. Create base layout component with header and footer
+[x] d. Build reusable Card component for project previews
 [ ] e. Build responsive navigation component
 [ ] f. Create Button and Link component variants
 [ ] g. Establish spacing and breakpoint utilities

@@ -8,7 +8,8 @@ export default defineConfig({
 	base: '/portfolio',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Dave Stevens',
+			description: 'Principal Software Engineer - Portfolio',
 			customCss: [
 				'./src/styles/custom.css',
 			],

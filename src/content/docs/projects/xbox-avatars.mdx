@@ -1,0 +1,125 @@
+---
+title: Xbox Avatars
+description: Built next-generation Xbox Avatars from the ground up - Creative, Expressive, and Inclusive
+---
+
+import xboxHero from "../../../assets/projects/xbox-avatars-hero.jpg";
+import xboxWheelchair from "../../../assets/projects/xbox_avatars_wheelchair.png";
+import xboxArchitecture from "../../../assets/projects/xbox_avatars_architecture.png";
+
+<div style="width: 100%; max-width: 1200px; height: 400px; border-radius: 0.5rem; overflow: hidden; margin: 2rem 0;">
+  <img
+    src={xboxHero.src}
+    alt="Xbox Avatars showcase featuring diverse characters with prosthetics and wheelchairs"
+    style="width: 100%; height: 100%; object-fit: cover;"
+  />
+</div>
+
+Next-generation avatar system delivering creative, expressive, and inclusive experiences to millions of Xbox players.
+
+<div style="border-left: 3px solid var(--sl-color-accent); padding: 1rem; background: var(--sl-color-bg-nav); margin: 2rem 0;">
+
+**Role:** Senior Software Engineer / Technical Lead
+**Company:** Microsoft  
+**Timeline:** 2016-2019  
+**Status:** Shipped 2017 (Xbox One, PC), but recently cancelled (2025)  
+**Platforms:** Xbox One, Windows 10  
+**Tech Stack:** Unity, C#, Azure
+
+</div>
+
+## The Challenge
+
+Xbox needed a complete reimagining of their avatar system. The original Xbox 360 avatars were beloved but limited—rigid body types, limited customization, and no representation for users with disabilities or diverse body types.
+
+We were tasked with building a system that would:
+
+- Support inclusive features (prosthetics, wheelchairs, diverse body types)
+- Enable deep customization without overwhelming users
+- Scale to millions of active users
+- Integrate with existing Xbox services
+- Ship on Xbox One with an editor experience on PC
+
+The complexity wasn't just technical—it was about representation. We needed to get this right.
+
+## My Role & Contributions
+
+Served as **Technical Lead** for the client team, coordinating with ~12 engineers and ~12 technical artists.
+
+- **Client Architecture:** Designed and implemented core Unity client systems for avatar rendering, customization UI, and asset loading
+- **Performance Optimization:** Profiled and optimized rendering pipeline for two critical scenarios:
+  - **Xbox One Console:** Rendered live avatars within tight memory and CPU budgets (most resources reserved for games)
+  - **Cloud Rendering:** Optimized high-res animation generation to minimize cloud costs
+- **Cross-Platform Development:** Coordinated Windows 10 and Xbox One builds, ensuring feature parity
+- **Team Leadership:** Led daily standup, sprint planning, and technical decision-making for the client team. Coordinated between engineers and technical artists to keep both groups aligned on technical constraints and creative goals
+- **Azure Integration:** Built asset delivery pipeline connecting content creation tooling to the Unity client and to Azure backend services
+
+## Technical Approach
+
+Built the client in Unity using a custom component-based architecture. Each avatar element (hair, clothing, accessories, prosthetics) was a modular component that could be swapped without rebuilding the entire avatar.
+
+<div style="width: 100%; max-width: 800px; border-radius: 0.5rem; overflow: hidden; margin: 2rem 0; border: 1px solid var(--sl-color-gray-5);">
+  <img
+    src={xboxArchitecture.src}
+    alt="Xbox Avatars architecture diagram showing modular component system"
+    style="width: 100%; height: auto;"
+  />
+</div>
+
+**Key Technical Decisions:**
+
+- **Asset Bundle Strategy:** Downloaded assets on-demand to minimize initial download size
+- **Hair Physics:** Custom physics system for natural hair movement without killing frame rate
+- **Accessibility First:** Prosthetics and wheelchairs weren't add-ons—they were core to the system architecture from day one
+- **Customization UI:** Built layered UI that revealed complexity gradually—simple choices up front, deep customization for power users
+
+**Trade-offs:**
+
+- Chose Unity over other engines including custom engines to take advantage of its strengths
+- Heavy limits on dynamic textures (substances) to ensure they didn't bottleneck avatar loading and rendering
+
+## Results & Impact
+
+- **Shipped to millions:** Live on Xbox One and Windows 10 (until shut down recently after 10 years live)
+- **Inclusive representation:** First Xbox avatar system with prosthetics, wheelchairs, and diverse body types
+
+<div style="width: 100%; max-width: 600px; border-radius: 0.5rem; overflow: hidden; margin: 2rem 0;">
+  <img
+    src={xboxWheelchair.src}
+    alt="Xbox Avatar in wheelchair showcasing inclusive customization options"
+    style="width: 100%; height: auto;"
+  />
+</div>
+
+- **Creative freedom:** Thousands of customization options without overwhelming users, including best in class colorization systems
+- **Performance:** Able to render on Xbox within our limited CPU and Memory performance budgets. I dove deep into Unity's source code and performance measurement systems to enable us to meet our targets
+- **Team success:** Technical lead for team of ~24 (engineers + artists) to deliver on time for Xbox One dashboard integration
+
+<div style="width: 100%; max-width: 800px; border-radius: 0.5rem; overflow: hidden; margin: 2rem 0; border: 1px solid var(--sl-color-gray-5);">
+  <video controls loop muted playsinline style="width: 100%; height: auto;">
+    <source src="/portfolio/images/xbox_avatar_profile.mp4" type="video/mp4" />
+    Your browser doesn't support video playback.
+  </video>
+</div>
+
+<div style="max-width: 800px; margin: -1rem 0 2rem 0; font-style: italic; color: var(--sl-color-gray-3); font-size: var(--sl-text-sm);">
+  Can you tell when you're seeing a live-rendered avatar versus a pre-rendered
+  spritesheet animation? I was a key contributor to both systems—real-time
+  rendering on Xbox One hardware and cloud-based high-resolution animation
+  generation for profile displays.
+</div>
+
+## Lessons Learned
+
+**What worked:**
+
+- Early collaboration with technical artists prevented late-stage rework on physics systems
+- Modular component architecture made adding new features (like prosthetics) much easier than it would have been with a monolithic system
+- Accessibility-first approach resulted in better UX for everyone, not just users with disabilities
+
+**Biggest takeaway:**
+Systems that need to represent real people require more than technical skill—they require empathy. Working with disability advocates and diverse user testers made this project more meaningful than any performance optimization could.
+
+---
+
+**One of my proudest projects.** Not just because of the technical complexity, but because it gave millions of users a way to see themselves in their Xbox experience.

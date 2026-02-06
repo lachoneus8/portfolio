@@ -7,6 +7,8 @@ description: How this portfolio was built and the technology choices behind it
 
 This page documents the architecture, design choices, and development workflow for this portfolio site itself—a demonstration of intentional technology selection and AI-assisted development.
 
+**The core portfolio was built in a single day.** Foundation, component system, navigation, and initial case studies completed in one intensive session using GitHub Copilot with Claude Sonnet 4.5.
+
 ## Technology Stack
 
 ### Framework: Astro with Starlight
@@ -33,6 +35,14 @@ I chose Astro with the Starlight theme for several key reasons:
 
 ## AI-Assisted Development Workflow
 
+### Build Timeline
+
+- **Morning**: Framework setup, design system, component architecture
+- **Afternoon**: Navigation, routing, responsive design, deployment pipeline
+- **Evening**: Initial content, case studies, polishing
+
+Subsequent days focused on content refinement, additional case studies, and image integration.
+
 ### Tools Used
 
 This portfolio was built using **GitHub Copilot with Claude Sonnet 4.5**, demonstrating the same AI-assisted workflow I use in my professional and personal work.
@@ -41,20 +51,21 @@ This portfolio was built using **GitHub Copilot with Claude Sonnet 4.5**, demons
 
 While AI tools provided significant assistance, all architectural decisions remained human-directed:
 
-- **Framework Selection**: I evaluated Astro vs Next.js vs plain static sites, or more hosted scenarios like Wix which doesn't leave as much room for direct code contributions
+- **Framework Selection**: I evaluated Astro vs Next.js vs plain static sites, and considered hosted scenarios like Wix that don't leave as much room for direct code contributions
 - **Design System**: Color choices, typography, and component structure were intentional decisions
 - **Content Strategy**: The narrative-driven case study approach to projects
 - **Information Architecture**: How to organize and present projects, experience, and technical details
 
 ### Where AI Accelerated Development
 
-AI tools dramatically increased productivity in:
+AI tools significantly increased productivity:
 
-1. **Boilerplate Generation**: Setting up Astro config, component templates, and styling foundations
-2. **Component Scaffolding**: Creating reusable Card, Button, and Link components with proper TypeScript types
-3. **CSS Utilities**: Building out spacing system and responsive utilities
-4. **Documentation**: Drafting initial content based on resume information
-5. **Refactoring**: Cleaning up code and ensuring consistency across components
+1. **Boilerplate Generation**: Astro config, component templates, styling foundations
+2. **Component Scaffolding**: Reusable components with proper TypeScript types
+3. **CSS Utilities**: Spacing system and responsive utilities
+4. **Documentation**: Initial content structure based on resume
+5. **Refactoring**: Code cleanup and consistency across components
+6. **Problem Solving**: Debugging layout issues, deployment configs, MDX integration
 
 ## Future Enhancements
 
@@ -65,6 +76,13 @@ Planned improvements documented in the project checklist:
 
 ## Takeaway
 
-This portfolio demonstrates that AI tools are powerful accelerators when paired with clear human direction. The key is knowing when to leverage AI (implementation, boilerplate, refactoring) and when to rely on human judgment (architecture, design, content strategy).
+This portfolio demonstrates how AI tools accelerate development when paired with clear human direction. The key is knowing when to leverage AI (implementation, boilerplate, debugging) and when to rely on human expertise (architecture, design, content strategy).
+
+**What shipped in 24 hours:**
+- Complete component system with responsive design
+- Navigation, routing, and deployment pipeline
+- Three detailed case studies with images
+- Professional design system
+- Accessible, performant code
 
 **View the code**: This entire portfolio is open source on [GitHub](https://github.com/lachoneus8/portfolio).

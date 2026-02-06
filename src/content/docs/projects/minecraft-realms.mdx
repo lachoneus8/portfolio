@@ -1,0 +1,108 @@
+---
+title: Minecraft Realms+
+description: Subscription service launch and mobile experience optimization for tens of millions of players
+---
+
+import minecraftHero from "../../../assets/projects/minecraft-realms-hero.jpg";
+import realmsIngame from "../../../assets/projects/minecraft_realms_plus_ingame.jpg";
+import tipExperience from "../../../assets/projects/minecraft_tip_experience.webp";
+import multiplayer from "../../../assets/projects/minecraft_multiplayer.webp";
+
+<div style="width: 100%; max-width: 1200px; height: 400px; border-radius: 0.5rem; overflow: hidden; margin: 2rem 0;">
+  <img
+    src={minecraftHero.src}
+    alt="Minecraft Realms+ subscription service"
+    style="width: 100%; height: 100%; object-fit: cover;"
+  />
+</div>
+
+Launched Minecraft Realms+ subscription service, providing continuously updated content and multiplayer hosting to millions of players worldwide.
+
+<div style="border-left: 3px solid var(--sl-color-accent); padding: 1rem; background: var(--sl-color-bg-nav); margin: 2rem 0;">
+
+**Role:** Senior Software Engineer  
+**Company:** Xbox Game Studios (Microsoft)  
+**Timeline:** 2019-2021  
+**Status:** Live (50M+ subscribers)  
+**Platforms:** iOS, Android, Xbox, PlayStation, Nintendo Switch, Windows  
+**Tech Stack:** C++, Cross-platform UI, Multiplayer Infrastructure
+
+</div>
+
+## The Challenge
+
+Minecraft needed to transition from one-time Realms purchases to an evergreen subscription service (Realms+) that provided continuous value through monthly content drops. This wasn't just a business model change—it required rethinking the entire player experience around discovery, onboarding, and ongoing engagement.
+
+The system had to:
+
+- Deliver compelling UX that communicated subscription value without overwhelming players
+- Guide new mobile players through complex multiplayer concepts
+- Maintain performance across all platforms despite added content delivery infrastructure
+- Support seamless content updates without disrupting active gameplay sessions
+- Scale to tens of millions of concurrent players across six platforms
+
+This was about balancing player experience with technical constraints—making sophisticated systems feel simple.
+
+## My Role & Contributions
+
+**Provided UX engineering for Realms+ launch** and technical leadership for mobile in-game tutorials, while analyzing multiplayer performance at scale.
+
+- **UX Engineering for Realms+ Launch:** Translated product vision into engineered experiences—designed and helped implement the subscription discovery flow, content marketplace UI, and onboarding sequences that balanced clarity with technical constraints
+- **Mobile Tutorial Technical Leadership:** Led the team building in-game tutorial systems for mobile platforms, architecting reusable components that educated players without interrupting gameplay flow
+- **Multiplayer Performance Analysis:** Deep profiling of multiplayer experiences across platforms to identify bottlenecks—focused on ensuring quality for shared infrastructure serving millions of concurrent players
+- **Cross-Platform Coordination:** Partnered with platform teams (iOS, Android, Console) to ensure consistent UX despite different technical capabilities
+- **Pragmatic Decision-Making:** Constantly balanced feature richness against performance and maintainability—shipped iteratively rather than waiting for perfect
+
+## Technical Approach
+
+Built UX-first engineering solutions that made complex multiplayer and subscription systems accessible to players of all ages and technical backgrounds.
+
+**Core Focus Areas:**
+
+- **Subscription UX Architecture:** Assisted with designing the flow from discovery → trial → subscription → content delivery, ensuring each step communicated value clearly while handling edge cases (expired subs, failed payments, parental controls)
+
+<div style="width: 100%; max-width: 800px; margin: 2rem auto; border-radius: 0.5rem; overflow: hidden; border: 1px solid var(--sl-color-gray-5);">
+  <img
+    src={realmsIngame.src}
+    alt="Minecraft Realms+ in-game interface showing content selection"
+    style="width: 100%; height: auto; display: block;"
+  />
+</div>
+
+- **Mobile Tutorial System:** Reviewed all code and provided technical guidance to the team building reusable tutorial components using C++ that could be configured by designers without code changes—tooltips, highlight overlays, step-by-step flows that adapted to player actions in real-time
+
+<div style="width: 100%; max-width: 800px; margin: 2rem auto; border-radius: 0.5rem; overflow: hidden; border: 1px solid var(--sl-color-gray-5);">
+  <img
+    src={tipExperience.src}
+    alt="Minecraft tutorial tips system in action"
+    style="width: 100%; height: auto; display: block;"
+  />
+  <p style="text-align: center; font-style: italic; color: var(--sl-color-gray-3); margin: 0.5rem 0; padding: 0.5rem; font-size: 0.9rem;">
+    This player flexed on the tip system... full netherite gear and never
+    punched a tree...
+  </p>
+</div>
+
+- **Performance at Scale:** Analyzed multiplayer server load patterns, client network performance, and UI responsiveness to maintain quality as player base scaled into tens of millions
+
+**Key Technical Decisions:\*\***
+
+- **Iterative UX launches:** Rather than ship everything at once, we launched core subscription flow first, then layered in discovery features based on player behavior data
+- **Graceful degradation:** Content delivery failures never blocked gameplay—players could always access their subscribed content, even if marketplace had issues
+
+## Results & Impact
+
+- **Successful launch:** Realms+ subscription service launched across all platforms, reaching 50M+ subscribers
+- **Mobile onboarding improvement:** Tutorial system reduced mobile player drop-off as they learned to play in-game
+- **Performance optimization:** Identified multiplayer bottlenecks and provided insights that enabled infrastructure improvements to support higher player counts
+
+<div style="width: 100%; max-width: 800px; margin: 2rem auto; border-radius: 0.5rem; overflow: hidden; border: 1px solid var(--sl-color-gray-5);">
+  <img
+    src={multiplayer.src}
+    alt="Players enjoying multiplayer gameplay on Minecraft Realms+"
+    style="width: 100%; height: auto; display: block;"
+  />
+</div>
+
+- **Evergreen engagement:** Content marketplace integration drove increased subscription retention through monthly world drops
+- **Cross-team collaboration:** Partnered with product, design, platform engineers, and server teams across multiple organizations to ship cohesive experience

@@ -39,12 +39,15 @@
 
 ## 5. Projects Section
 
-[ ] a. Define project case study template structure
-[ ] b. Create project listing/index page
-[ ] c. Build individual project case study layout
-[ ] d. For each project, document: - Context and background - Challenge or problem statement - Your role and specific contributions - Outcome and measurable impact - Reflection and lessons learned
-[ ] e. Add project preview cards with images
-[ ] f. Implement project navigation between case studies
+[x] a. Define project case study template structure
+[x] b. Create project listing/index page (home page "Stuff I've Shipped" section with FlipCards)
+[x] c. Build individual project case study layout (MDX with consistent structure)
+[x] d. Document context, challenge, role, outcomes, and lessons learned for:
+    - Xbox Avatars (complete with images, video, architecture diagram)
+    - Meta Avatars (complete with hero image, YouTube embed, SIGGRAPH reference)
+    - Minecraft Realms+ (complete with 3 images)
+[x] e. Add project preview cards with images (FlipCard components on home page)
+[x] f. Implement project navigation (sidebar autogenerate + FlipCard links to case studies)
 
 ## 6. Behind the Build Page
 
@@ -59,12 +62,13 @@
 
 ## 7. Content Creation
 
-[ ] a. Write and refine all page copy
-[ ] b. Prepare project images and screenshots
-[ ] c. Create project diagrams or visuals as needed
-[ ] d. Proofread all content for tone and consistency
-[ ] e. Ensure professional tone with subtle creative elements
+[x] a. Write and refine all page copy
+[x] b. Prepare project images and screenshots (hero images, in-content screenshots added)
+[x] c. Create project diagrams or visuals as needed (Xbox architecture diagram)
+[x] d. Proofread all content for tone and consistency
+[x] e. Ensure professional tone with subtle creative elements (indie voice, FlipCards, Matrix-inspired)
 [ ] f. Optimize images for web performance
+[ ] g. Develop comprehensive "Lessons Learned" section for Minecraft Realms+ case study
 
 ## 8. Performance & Quality
 

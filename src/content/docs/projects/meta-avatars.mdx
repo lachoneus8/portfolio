@@ -1,0 +1,111 @@
+---
+title: Meta Avatars Platform
+description: Billion-user avatar system across Facebook, Instagram, and Quest
+---
+
+import metaHero from "../../../assets/projects/meta-avatars-hero.png";
+
+<div style="width: 100%; max-width: 1200px; height: 400px; border-radius: 0.5rem; overflow: hidden; margin: 2rem 0;">
+  <img
+    src={metaHero.src}
+    alt="Meta Avatars used across Facebook, Instagram, and Quest VR platforms"
+    style="width: 100%; height: 100%; object-fit: cover;"
+  />
+</div>
+
+Core avatar platform powering personalized experiences for over a billion users across Meta's family of apps and devices.
+
+<div style="border-left: 3px solid var(--sl-color-accent); padding: 1rem; background: var(--sl-color-bg-nav); margin: 2rem 0;">
+
+**Role:** Principal Software Engineer  
+**Company:** Meta (Facebook)  
+**Timeline:** 2021-2024  
+**Status:** Live (1B+ users)  
+**Platforms:** iOS, Android, Quest VR, Web  
+**Tech Stack:** C++, Python, USD (Universal Scene Description), Node-based Pipeline
+
+</div>
+
+## The Challenge
+
+Meta needed a unified avatar system that could work seamlessly across their entire ecosystem—from 2D mobile apps (Facebook, Instagram, Messenger) to fully immersive VR experiences on Quest. The Pipeline team was tasked with building the foundation: a fully parametric and flexible avatar system with runtime editing capabilities.
+
+The system had to:
+
+- Support deep parametric customization including body sliders that users could adjust in real-time
+- Scale to over a billion users without compromising generation performance
+- Enable runtime editing—users needed to see changes immediately as they adjusted parameters
+- Maintain visual consistency across wildly different platforms
+- Be flexible enough to support future avatar features without architectural rewrites
+- Generate avatars quickly enough for real-time social interactions
+
+The challenge wasn't just technical scale—it was building a system flexible enough to evolve while being performant enough to ship.
+
+## My Role & Contributions
+
+**Led the team building the nodes for the node-based avatar pipeline**, managing engineers developing individual processing nodes and helping to architect the system that powers parametric avatar generation.
+
+- **Node Architecture Design:** Along with other industry leading engineers and tech artists, helped design the core node-based architecture where avatar content flows through processing nodes—each node handles a specific step (mesh deformation, texture generation, asset assembly)
+- **C++ Node Implementation:** Built critical pipeline nodes myself in C++, exposed to Python via bindings for internal tooling and artist workflows
+- **Team Leadership:** Led the team responsible for building individual pipeline nodes, coordinating between ~20 engineers across multiple avatar workstreams
+- **Performance Optimization:** Deep performance profiling and optimization across the pipeline—achieved 40% faster load times for parametric avatar changes and 20% reduction in backend execution overhead
+- **Internal Tooling:** Developed Python-based tools that allowed artists and developers to test and iterate on avatar components without full pipeline rebuilds
+- **USD Integration:** Helped support the Universal Scene Description (USD) representation of avatar components, enabling flexible composition and runtime editing
+
+## Technical Approach
+
+Helped build a **node-based pipeline architecture** where avatar generation is broken into discrete processing steps, each handled by specialized nodes. Avatar content flows through this graph, with each node transforming the data before passing it to the next.
+
+**Core Architecture:**
+
+- **Node Graph System:** Avatar generation represented as a directed graph where nodes process avatar data sequentially or in parallel
+- **USD Hierarchy:** Used Universal Scene Description (USD) to represent avatar component hierarchy—body, clothing, accessories, hair all composed as USD layers
+
+:::note[SIGGRAPH 2024 Presentation]
+I worked directly with the authors of [**"Scaling Avatars to Billions: Leveraging OpenUSD for Dynamic Character Assembly and Personalization"**](https://www.nvidia.com/en-us/on-demand/session/siggraph2024-sigg2414/) presented at SIGGRAPH 2024. This presentation details the USD-based pipeline architecture that powers Meta's avatar system.
+:::
+
+- **C++ Performance Layer:** Critical nodes written in C++ for performance, with Python bindings exposing them to internal tools
+- **Runtime Editing:** Body sliders and parametric controls fed directly into the node graph, allowing real-time preview as users adjusted values
+- **Parametric Flexibility:** Every avatar feature—facial structure, body shape, clothing fit—controlled by parameters that flowed through the pipeline
+- **Aggressive Caching:** Cached node outputs to avoid redundant work when users made small parameter changes—critical for real-time preview performance
+
+## Results & Impact
+
+- **Massive scale:** Live across Facebook, Instagram, Messenger, and Quest with over 1 billion users
+- **Performance gains:** Responsible for 40% faster load times for avatar changes, 20% reduction in backend execution overhead
+- **Platform launch:** Shipped as part of Meta Connect 2024
+
+<div style="width: 100%; max-width: 640px; margin: 2rem auto;">
+  <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 0.5rem; border: 1px solid var(--sl-color-gray-5);">
+    <iframe
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+      src="https://www.youtube.com/embed/EpZwAicBEW8"
+      title="Meta Connect 2024 - Meta Avatars Platform Launch"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+  <p style="text-align: center; font-style: italic; color: var(--sl-color-gray-3); margin-top: 0.5rem; font-size: 0.9rem;">
+    Meta Connect 2024 presentation featuring the new avatar platform
+  </p>
+</div>
+
+- **Cross-platform success:** Single avatar identity that works consistently from mobile to VR
+- **Team leadership:** Led performance workstream across 20+ engineers from multiple organizations
+
+## Lessons Learned
+
+**What I'd do differently:**
+
+- **Earlier investment in node visualization tools:** Debugging node graphs is hard without good visualization—we built this late, should have been day one
+- **Better automated performance testing:** Catching regressions in a node graph requires different testing than monolithic code—learned this the hard way
+
+**Biggest takeaway:**
+
+Building for a billion users means **architecture flexibility is as important as performance**. The node-based approach let us add features and optimize bottlenecks without tearing down the system. You can't predict every future requirement, but you can build systems that adapt.
+
+---
+
+**Working at Meta scale taught me:** Flexibility and performance aren't opposing goals—the node-based architecture delivered both. Breaking complex systems into composable pieces isn't just cleaner code, it's how you ship at scale without painting yourself into a corner.

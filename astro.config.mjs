@@ -28,7 +28,7 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Projects',
+					label: 'Highlighted Projects',
 					autogenerate: { directory: 'projects' },
 				},
 				{

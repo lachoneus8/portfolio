@@ -5,22 +5,25 @@ interface Props {
   frontContent: string;
   backContent: string;
   image?: ImageMetadata;
+  link?: string;
 }
 
-import type { ImageMetadata } from 'astro';
-import { Image } from 'astro:assets';
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
-const { title, icon, frontContent, backContent, image } = Astro.props;
+const { title, icon, frontContent, backContent, image, link } = Astro.props;
 ---
 
-<div class="flip-card">
+<div class="flip-card" data-link={link || null}>
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      {image && (
-        <div class="flip-card-image">
-          <Image src={image} alt={title} />
-        </div>
-      )}
+      {
+        image && (
+          <div class="flip-card-image">
+            <Image src={image} alt={title} />
+          </div>
+        )
+      }
       {icon && <span class="flip-card-icon">{icon}</span>}
       <h3>{title}</h3>
       <p>{frontContent}</p>
@@ -30,6 +33,13 @@ const { title, icon, frontContent, backContent, image } = Astro.props;
     <div class="flip-card-back">
       <h3>{title}</h3>
       <p>{backContent}</p>
+      {
+        link && (
+          <a href={link} class="card-link">
+            View Full Case Study →
+          </a>
+        )
+      }
     </div>
   </div>
 </div>
@@ -39,7 +49,7 @@ const { title, icon, frontContent, backContent, image } = Astro.props;
     background: transparent;
     perspective: 1000px;
     height: 100%;
-    min-height: 400px;
+    min-height: 440px;
   }
 
   .flip-card-inner {
@@ -71,7 +81,7 @@ const { title, icon, frontContent, backContent, image } = Astro.props;
 
   .flip-card-image {
     width: 100%;
-    height: 240px;
+    height: 280px;
     border-radius: 0.375rem;
     overflow: hidden;
     margin: -1.5rem -1.5rem 0 -1.5rem;
@@ -89,7 +99,11 @@ const { title, icon, frontContent, backContent, image } = Astro.props;
   }
 
   .flip-card-back {
-    background: linear-gradient(135deg, var(--sl-color-accent-low) 0%, var(--sl-color-bg-nav) 100%);
+    background: linear-gradient(
+      135deg,
+      var(--sl-color-accent-low) 0%,
+      var(--sl-color-bg-nav) 100%
+    );
     border: 1px solid var(--sl-color-accent);
     transform: rotateY(180deg);
   }
@@ -124,6 +138,27 @@ const { title, icon, frontContent, backContent, image } = Astro.props;
     display: none;
   }
 
+  .card-link {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.5rem 1rem;
+    background: var(--sl-color-accent);
+    color: var(--sl-color-black);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    font-size: var(--sl-text-sm);
+    transition:
+      transform 0.2s,
+      background 0.2s;
+    text-align: center;
+  }
+
+  .card-link:hover {
+    background: var(--sl-color-accent-high);
+    transform: translateX(4px);
+  }
+
   /* Mobile: tap to flip instead of hover */
   @media (max-width: 768px) {
     .flip-hint-desktop {
@@ -137,7 +172,7 @@ const { title, icon, frontContent, backContent, image } = Astro.props;
     .flip-card:hover .flip-card-inner {
       transform: none;
     }
-    
+
     .flip-card.flipped .flip-card-inner {
       transform: rotateY(180deg);
     }
@@ -145,11 +180,11 @@ const { title, icon, frontContent, backContent, image } = Astro.props;
 </style>
 
 <script is:inline>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 768) {
-      document.querySelectorAll('.flip-card').forEach(function(card) {
-        card.addEventListener('click', function() {
-          this.classList.toggle('flipped');
+      document.querySelectorAll(".flip-card").forEach(function (card) {
+        card.addEventListener("click", function () {
+          this.classList.toggle("flipped");
         });
       });
     }
